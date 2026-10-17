@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | Play & Win</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="tictactoe.js" defer></script>
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <p class="eyebrow">THE CLASSIC GAME</p>
+            <h1>Tic Tac <span>Toe.</span></h1>
+            <p class="subtitle">Three in a row. Claim your victory!</p>
+        </header>
+
+        <section class="scoreboard">
+            <div class="score-card x-card">
+                <span class="player-symbol">X</span>
+                <p>PLAYER X</p>
+                <strong id="scoreX">0</strong>
+            </div>
+
+            <div class="score-card draw-card">
+                <span class="player-symbol">🤝</span>
+                <p>DRAWS</p>
+                <strong id="scoreDraw">0</strong>
+            </div>
+
+            <div class="score-card o-card">
+                <span class="player-symbol">O</span>
+                <p>PLAYER O</p>
+                <strong id="scoreO">0</strong>
+            </div>
+        </section>
+
+        <section class="game-panel">
+            <div class="game-info">
+                <span class="live-dot"></span>
+                <p id="status" aria-live="polite">Player X's turn</p>
+                <span id="turnBadge">X</span>
+            </div>
+
+            <div class="game">
+                <button class="box" aria-label="Row 1, column 1"></button>
+                <button class="box" aria-label="Row 1, column 2"></button>
+                <button class="box" aria-label="Row 1, column 3"></button>
+                <button class="box" aria-label="Row 2, column 1"></button>
+                <button class="box" aria-label="Row 2, column 2"></button>
+                <button class="box" aria-label="Row 2, column 3"></button>
+                <button class="box" aria-label="Row 3, column 1"></button>
+                <button class="box" aria-label="Row 3, column 2"></button>
+                <button class="box" aria-label="Row 3, column 3"></button>
+            </div>
+
+            <p id="result" aria-live="polite">
+                Make your move and have fun!
+            </p>
+
+            <div class="actions">
+                <button id="reset">↻ New Round</button>
+                <button id="resetScores">Reset Scores</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made for fun <span>✦</span> Played with strategy</p>
+        </footer>
+    </main>
+</body>
+</html>
